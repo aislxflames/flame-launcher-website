@@ -1,0 +1,176 @@
+@import url("navbar.css");
+:root {
+  --global-color: #c50000;
+  --global-color-2: #ff2600;
+  --global-bg: tomato;
+}
+body {
+  background-color: black;
+}
+.p1 {
+  margin-top: 60px;
+  height: 25em;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--global-bg), 0 0 50px var(--global-color);
+}
+.home {
+  display: flex;
+}
+.home-content {
+  margin-left: 100px;
+  margin-top: 150px;
+}
+.home-content h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+.home-content #s1 {
+  text-shadow: 0 0 25px var(--global-color), 0 0 50px var(--global-color);
+  color: var(--global-color);
+}
+.space {
+  padding: 5px;
+}
+.home-btn1 {
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.home-btn2 {
+  font-size: 15px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: red;
+}
+.home-content p {
+  margin-top: 2px;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* Type writter animation Start*/
+.animated-text {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.animated-text span {
+  position: relative;
+}
+
+.animated-text span::before {
+  content: "Youtuber";
+  color: var(--global-color-2);
+  text-shadow: 0 0 25px var(--global-color-2);
+  animation: words 20s infinite;
+}
+
+.animated-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: black;
+  border-left: 2px solid #ff0c0c;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "Software Developer";
+  }
+  21%,
+  40% {
+    content: "Web Developer";
+  }
+  41%,
+  60% {
+    content: "Minecraft Developer ";
+  }
+  61%,
+  80% {
+    content: "Web Designer";
+  }
+  81%,
+  100% {
+    content: "Web Developer";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+/* End */
+.services {
+  padding: 50px;
+  height: 200vh;
+  background-color: #0c0c0c;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 6%;
+}
+.services h1 {
+  color: red;
+  text-shadow: 0 0 25px var(--global-color), 0 0 25px var(--global-color),
+    0 0 25px var(--global-color);
+}
+
+.service-contents {
+  margin-top: 40px;
+  display: flex;
+}
+.card {
+  margin-right: 70px;
+}
+.btn-primary {
+  color: white;
+  border: 2px solid var(--global-color);
+  background-color: transparent;
+}
+.btn-primary:hover {
+  border: none;
+}
+
+@media (max-width: 991px) {
+  .home {
+    align-items: center;
+    display: flexbox;
+    flex-direction: column;
+  }
+  .home-content {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,33 @@
+.navbar {
+  background-color: black;
+}
+.navbar-brand {
+  font-size: 30px;
+  color: var(--global-color);
+  text-shadow: 0 0 25px var(--global-color-2);
+}
+.navbar-brand span {
+  color: var(--global-color-2);
+}
+.navbar-brand:hover {
+  color: var(--global-color);
+  scale: 1.1;
+  text-shadow: 0 0 25px red, 0 0 40px red;
+}
+.nav-item {
+  font-size: 20px;
+  margin-left: 50px;
+}
+.nav-item:hover {
+  scale: 1.1;
+  border-bottom: 3px solid var(--global-color);
+}
+.btn {
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid var(--global-color);
+}
+.btn:hover {
+  background-color: var(--global-color);
+  box-shadow: 0 0 25px var(--global-color);
+}
