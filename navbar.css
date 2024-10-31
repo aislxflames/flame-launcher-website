@@ -3,7 +3,6 @@
 }
 .navbar-brand {
   font-size: 30px;
-  color: var(--global-color);
   text-shadow: 0 0 25px var(--global-color-2);
 }
 .navbar-brand span {
