@@ -10,6 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/0f79c46907.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -23,7 +27,7 @@
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
+          aria-expanded="true"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
@@ -31,25 +35,36 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0 fw-bold">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Projects</a
+              <a class="nav-link yay active" aria-current="page" href="#home"
+                ><i class="fa-solid fa-house"></i> Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Skills</a>
+              <a class="nav-link" aria-current="page" href="#projects"
+                ><i class="fa-solid fa-diagram-project"></i> Projects</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Github</a>
+              <a class="nav-link" aria-current="page" href="#skills"
+                ><i class="fa-solid fa-kitchen-set"></i> Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="https://github.com/orgs/theflames-presence/repositories"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i> Github</a
+              >
             </li>
           </ul>
           <button class="btn" type="submit">Hire Me</button>
         </div>
       </div>
     </nav>
-    <section class="container-sm home">
+    <!-- Navbar End -->
+    <section class="container-sm home" id="home">
       <img src="./assets/images/img1.png" alt="" class="p1" />
       <div class="home-content">
         <h1>Hey It's <span id="s1">Aislx</span></h1>
@@ -66,7 +81,7 @@
         </span>
       </div>
     </section>
-    <section class="container services">
+    <section class="container services" id="services">
       <h1>Services</h1>
       <div class="service-contents">
         <div class="service">
@@ -147,10 +162,53 @@
                 Professional Minecraft server developer, creating customized
                 experiences with plugins, mods, and optimizations.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary">Show More</a>
             </div>
           </div>
           <!-- Card End -->
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h2 class="heading">Skills</h2>
+      <div class="container">
+        <div class="row" id="skillsContainer">
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/icons/html.png" alt="" />
+              <span>Html</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/icons/css-3.png" alt="" />
+              <span>Css</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/icons/java-script.png" alt="" />
+              <span>Js</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/icons/react.png" alt="" />
+              <span>React</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/icons/php.png" alt="" />
+              <span>Php</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/icons/mysql.png" alt="" />
+              <span>MySql</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -165,5 +223,91 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Projects -->
+    <div class="container projects" id="projects">
+      <h1 class="title">Projects</h1>
+      <hr />
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <a href="./project-1/index.html">
+            <div class="card">
+              <img
+                src="./assets/images/project-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">APJ ABDUL KALAM</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./project-2/index.html">
+            <div class="card">
+              <img
+                src="./assets/images/project-2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">PARALLEX WEBSITE</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Youtube Clone</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Netflix Clone</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-discord"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Skills</a></li>
+          <li><a href="">Github</a></li>
+        </ul>
+        <p>@Copyright 2024 Aislx FlamEs</p>
+      </div>
+    </footer>
   </body>
 </html>
