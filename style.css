@@ -7,6 +7,10 @@
   --bg-color: #c500008a;
   --text-color: #d60000;
 }
+* a {
+  text-decoration: none;
+  color: white;
+}
 body {
   background-color: black;
 }
@@ -38,8 +42,7 @@ body {
   margin-right: 15px;
   padding: 10px;
   font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-weight: 900;
 }
 .home-btn2 {
   font-size: 15px;
@@ -142,7 +145,7 @@ body {
   margin-top: 50px;
   text-align: center;
   border-radius: 6%;
-  box-shadow: 0 0 25px red, 0 0 50px red;
+  box-shadow: 0 0 25px red;
 }
 .services h1 {
   color: red;
@@ -233,16 +236,20 @@ body {
 
 /* Skills Section */
 .skills .heading {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-size: 40px;
-  text-shadow: 0 0 20px;
+  text-shadow: 0 0 25px red, 0 0 50px red;
   text-align: center;
+  background-color: black;
 }
 .skills {
   background-color: black;
+  margin-bottom: 100px;
 }
 
 .skills .container {
+  box-shadow: 0 0 25px red;
   background-color: #e1352c48;
   color: var(--text-color);
   border-radius: 1rem;
@@ -295,6 +302,10 @@ body {
   box-shadow: 0 0 25px red, 0 0 50px purple;
   border-radius: 20px;
   padding: 50px;
+}
+.projects .card:hover {
+  transition: 0.2s;
+  transform: scale(1.02);
 }
 .projects h1 {
   text-align: center;
