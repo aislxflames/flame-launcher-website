@@ -17,8 +17,10 @@
   font-size: 20px;
   margin-left: 50px;
 }
-.nav-item:hover {
+.nav-item:hover,
+.active {
   scale: 1.1;
+  color: var(--global-color);
   border-bottom: 3px solid var(--global-color);
 }
 .btn {
